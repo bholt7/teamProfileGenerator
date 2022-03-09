@@ -11,7 +11,7 @@ This is a homework assignment that generates an html document based on node js i
 * Contact
 ## Installation
 inquirer and jest
-Usage
+## Usage
 This can be used to create a roster for a cooperate environment
 
 ## Contributions
