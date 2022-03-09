@@ -34,7 +34,7 @@ const employeePrompt = [
         message: "What is the role of the employee you want to add ?",
         name: "role",
         type: "list",
-        chocies: ["Engineer", "Intern"]
+        choices: ["Engineer", "Intern"]
     },
     {
         message: (answers)=>`What is the ${answers.role} name ?`,
@@ -115,8 +115,13 @@ function createHtml() {
         margin: 0;
         padding: 0;
     }
+    body {
+        background: rgb(112, 4, 4);
+    }
     h1 {
         background: linear-gradient(goldenrod, rgb(112, 4, 4));
+        border: 1rem solid rgb(51, 51, 51);
+        border-radius: 3px;
         color: rgb(112, 4, 4);
         text-align: center;
         height: 100px;
@@ -126,6 +131,8 @@ function createHtml() {
     .container {
         padding: 6em 12em;
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .card {
@@ -178,7 +185,7 @@ function createHtml() {
 </body>
 </html>`
 
-fs.writeFileSync("./dist/generated.html", html);
+fs.writeFileSync("./dist/generated.html", generateHtml);
 console.log("Successful")
 }
 
