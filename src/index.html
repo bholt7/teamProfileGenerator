@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Generator</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        background: linear-gradient(goldenrod, rgb(112, 4, 4));
+        color: rgb(112, 4, 4);
+        text-align: center;
+        height: 100px;
+        padding-top: 50px;
+    }
+
+    .container {
+        padding: 6em 12em;
+        display: flex;
+    }
+
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        width: 15rem;
+        height: fit-content;
+        border-radius: 5px;
+    }
+
+    .card .top {
+        background: linear-gradient(green, blue );
+        height: 4.25rem;
+        padding: 1em;
+        border-radius: 5px 5px 0 0;
+        color: white;
+    }
+    .top :first-child {
+        font-size: 30px;
+    }
+
+    .top :nth-child(2) {
+        font-size: 25px;
+    }
+
+    .bottom {
+        padding: 3em;
+        height: fit-content;
+        background: darkblue;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .bottom ul {
+        list-style: none;
+    }
+
+    .bottom ul li {
+        width: 100%;
+        background: white;
+        border: 1px solid white;
+        padding: 10px 0px;
+    }
+
+
+</style>
+<body>
+    <h1>Team Generator</h1>
+    <div class="container">
+        <div class="card">
+            <div class="top">
+                <div>Ben</div>
+                <div>Manager</div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>ID: </li>
+                    <li>Email:</li>
+                    <li>Office Number:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
